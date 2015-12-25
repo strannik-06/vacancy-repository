@@ -1,0 +1,10 @@
+{
+  "name": "netwerven/vacancy-repository",
+  "description": "Vacancy repository",
+  "autoload": {
+    "psr-4": { "Netwerven\\": "src/" }
+  },
+  "require": {
+    "php": ">=5.4"
+  }
+}
