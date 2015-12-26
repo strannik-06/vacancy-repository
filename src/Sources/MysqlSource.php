@@ -3,22 +3,31 @@
 namespace Netwerven\Sources;
 
 /**
- * Mysql source
+ * Mysql source.
  */
 class MysqlSource implements SourceInterface
 {
+    /**
+     * {@inheritdoc}
+     */
     public function getName()
     {
         return 'mysql';
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function find($id)
     {
-        // TODO: Implement find() method.
+
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function findAll()
     {
-        // TODO: Implement findAll() method.
+
     }
 }

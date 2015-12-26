@@ -5,12 +5,12 @@ namespace Netwerven\Sources;
 use Netwerven\Model\Vacancy;
 
 /**
- * Dummy Source for testing purposes
+ * Dummy Source for testing purposes.
  */
 class DummySource implements SourceInterface
 {
     /**
-     * @return string
+     * {@inheritdoc}
      */
     public function getName()
     {
@@ -18,9 +18,7 @@ class DummySource implements SourceInterface
     }
 
     /**
-     * @param $id
-     *
-     * @return Vacancy
+     * {@inheritdoc}
      */
     public function find($id)
     {
@@ -33,6 +31,9 @@ class DummySource implements SourceInterface
         return $vacancy;
     }
 
+    /**
+     * {@inheritdoc}
+     */
     public function findAll()
     {
         $vacancy1 = new Vacancy();

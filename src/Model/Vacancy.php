@@ -3,7 +3,7 @@
 namespace Netwerven\Model;
 
 /**
- * A test vacancy model
+ * A test vacancy model.
  */
 class Vacancy
 {

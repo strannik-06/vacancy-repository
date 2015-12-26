@@ -26,6 +26,8 @@ interface SourceInterface
     public function find($id);
 
     /**
+     * Find all vacancies.
+     *
      * @return Vacancy[]
      */
     public function findAll();

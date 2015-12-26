@@ -6,10 +6,13 @@ use Netwerven\Sources\SourceInterface;
 use Netwerven\Model\Vacancy;
 
 /**
- * Main Vacancy Repository
+ * Vacancy Repository can get vacancies from different sources. Sources can be added and removed dynamically.
  */
 class VacancyRepository
 {
+    /**
+     * @var array
+     */
     private $sources = array();
 
     /**
@@ -42,6 +45,8 @@ class VacancyRepository
     }
 
     /**
+     * Find one vacancy by id from all sources.
+     *
      * @param $id
      *
      * @return Vacancy|null
@@ -59,6 +64,8 @@ class VacancyRepository
     }
 
     /**
+     * Find all vacancies from all sources. Vacancy can be taken only once - from first source where it was found.
+     *
      * @return Vacancy[]
      */
     public function findAll()
@@ -80,6 +87,8 @@ class VacancyRepository
     }
 
     /**
+     * Find one vacancy by id from certain source by source name.
+     *
      * @param integer $id
      * @param string  $sourceName
      *
@@ -98,6 +107,8 @@ class VacancyRepository
     }
 
     /**
+     * Find all vacancies from certain source by source name.
+     *
      * @param string $sourceName
      *
      * @return Vacancy[]
